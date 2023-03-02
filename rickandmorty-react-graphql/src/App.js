@@ -4,7 +4,7 @@ import Card from './Card'
 
 const App = () => {
     const { loading, error, data } = useQuery(GET_ALL_CHARACTERS, {
-        variables: { page: 3 }
+        variables: { page: 1 }
     })
 
     if (loading) return <p>Loading...</p>
